@@ -10,3 +10,7 @@ for(i=1;i<27;i++) {
   console.log('Karakter '+(i+9).toString(36)+' sebanyak = '+data.count((i+9).toString(36)));
   console.log('Karakter '+(i+9).toString(36).toUpperCase()+' sebanyak = '+data.count((i+9).toString(36).toUpperCase()));
 }
+var newData= ''
+for(var z=0;z<data.length;z++){
+newData += String.fromCharCode(data.charCodeAt(z)+5)}
+console.log(newData)
