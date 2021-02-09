@@ -12,5 +12,11 @@ for(i=1;i<27;i++) {
 }
 var newData= ''
 for(var z=0;z<data.length;z++){
-newData += String.fromCharCode(data.charCodeAt(z)+5)}
+    var edit= data.toUpperCase().charCodeAt(z);
+    if(edit !== 90){
+        newData += String.fromCharCode(edit+5);
+        }else{
+            newData += String.fromCharCode(edit-25);
+            }
+} 
 console.log(newData)
